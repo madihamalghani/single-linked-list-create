@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Linked List Visualization</h1>
+        <div class="input-area">
+            <input id="node-value" type="text" id="node-value" placeholder="Enter node value" />
+            <input type="number" id="max-nodes" placeholder="Limit" />
+
+            <button onclick="addNode()">Add Node</button>
+            <!-- <button onclick="displayLinkedList()";>Display</button> -->
+        </div>
+        <!-- <div>Display</div> -->
+        <div class="linked-list"  id="linked-list">
+
+            <!-- Nodes will be added here dynamically -->
+        </div>
+        <p id="limit-message" style="color: red; display: none; padding:15px">You've reached the maximum number of nodes.</p>
+        <p id="limit-invalid" style="color: red; display: none; padding:15px">Invalid Limit</p>
+        <p id="data-invalid" style="color: red; display: none; padding:15px">Input valid value in the field</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
